@@ -15,7 +15,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "user")
-@Table(name = "users")
+@Table(name = "users", uniqueConstraints={@UniqueConstraint(columnNames={"email"})})
+
 public class User extends BaseEntity implements Serializable {
 
     @Column(nullable = false)
@@ -24,7 +25,7 @@ public class User extends BaseEntity implements Serializable {
     @Column(nullable = false)
     private String lastName;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "email")
     private String email;
 
     @Column(nullable = false)
