@@ -1,0 +1,16 @@
+schema {
+    query: Query
+}
+type Query {
+    allAcceptedTransactions(email: String) : [Transaction]
+    allRejectedTransactions(email: String) : [Transaction]
+}
+type Transaction {
+    BillNo: String
+    FirstName: String
+    LastName: String
+    ContentName: String
+    ContentType: String
+    ContentValue: String
+    Result: String
+}
