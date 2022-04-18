@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserServiceInterface{
     private final double PREMIUM = 100;
     private final double GOLD = 50;
-    private final double STANDART = 100;
+    private final double STANDART = 25;
     private final UserDao userDao;
 
     @Override
