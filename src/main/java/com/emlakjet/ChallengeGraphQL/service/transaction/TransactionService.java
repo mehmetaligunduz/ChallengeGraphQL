@@ -1,14 +1,11 @@
 package com.emlakjet.ChallengeGraphQL.service.transaction;
 
 import com.emlakjet.ChallengeGraphQL.common.ResultEnumeration;
-import com.emlakjet.ChallengeGraphQL.dao.transaction.Transaction;
-import com.emlakjet.ChallengeGraphQL.dao.user.User;
-import com.emlakjet.ChallengeGraphQL.service.user.UserService;
+import com.emlakjet.ChallengeGraphQL.domain.Transaction;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
-import javax.persistence.Column;
 @Getter
 @Builder
 @EqualsAndHashCode

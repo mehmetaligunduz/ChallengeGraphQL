@@ -1,5 +1,7 @@
 package com.emlakjet.ChallengeGraphQL.dao.transaction;
 
+import com.emlakjet.ChallengeGraphQL.domain.Transaction;
+import com.emlakjet.ChallengeGraphQL.repository.TransactionRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -17,10 +19,5 @@ public class TransactionDaoImpl implements TransactionDao{
     @Override
     public Transaction getTransaction(Long id) {
         return transactionRepository.getById(id);
-    }
-
-    @Override
-    public Transaction getByBillNo(String billNo) {
-        return transactionRepository.getTransactionByBillNo(billNo);
     }
 }

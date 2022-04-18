@@ -1,7 +1,7 @@
 package com.emlakjet.ChallengeGraphQL.service.user;
 
 import com.emlakjet.ChallengeGraphQL.common.PackageEnumeration;
-import com.emlakjet.ChallengeGraphQL.dao.user.User;
+import com.emlakjet.ChallengeGraphQL.domain.User;
 import com.emlakjet.ChallengeGraphQL.dao.user.UserDao;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

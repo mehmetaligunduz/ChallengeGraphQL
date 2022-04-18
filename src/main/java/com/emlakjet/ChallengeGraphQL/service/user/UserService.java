@@ -1,7 +1,7 @@
 package com.emlakjet.ChallengeGraphQL.service.user;
 
 import com.emlakjet.ChallengeGraphQL.common.PackageEnumeration;
-import com.emlakjet.ChallengeGraphQL.dao.user.User;
+import com.emlakjet.ChallengeGraphQL.domain.User;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

@@ -1,8 +1,6 @@
-package com.emlakjet.ChallengeGraphQL.dao.transaction;
+package com.emlakjet.ChallengeGraphQL.domain;
 
 import com.emlakjet.ChallengeGraphQL.common.ResultEnumeration;
-import com.emlakjet.ChallengeGraphQL.dao.BaseEntity;
-import com.emlakjet.ChallengeGraphQL.dao.user.User;
 import lombok.*;
 
 import javax.persistence.*;

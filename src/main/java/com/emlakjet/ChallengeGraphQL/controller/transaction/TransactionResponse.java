@@ -1,6 +1,5 @@
 package com.emlakjet.ChallengeGraphQL.controller.transaction;
 
-import com.emlakjet.ChallengeGraphQL.controller.user.UserResponse;
 import lombok.*;
 
 @Getter

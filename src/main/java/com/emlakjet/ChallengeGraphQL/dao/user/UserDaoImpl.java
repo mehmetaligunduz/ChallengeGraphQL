@@ -1,5 +1,7 @@
 package com.emlakjet.ChallengeGraphQL.dao.user;
 
+import com.emlakjet.ChallengeGraphQL.domain.User;
+import com.emlakjet.ChallengeGraphQL.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

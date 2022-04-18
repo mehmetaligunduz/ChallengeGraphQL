@@ -1,4 +1,4 @@
-package com.emlakjet.ChallengeGraphQL.dao;
+package com.emlakjet.ChallengeGraphQL.domain;
 
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;

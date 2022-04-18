@@ -2,7 +2,7 @@ package com.emlakjet.ChallengeGraphQL.service;
 
 import com.emlakjet.ChallengeGraphQL.service.datafetcher.AllAcceptedTransactionsDataFetcher;
 import com.emlakjet.ChallengeGraphQL.service.datafetcher.AllRejectedTransactionsDataFetcher;
-import com.emlakjet.ChallengeGraphQL.dao.transaction.TransactionRepository;
+import com.emlakjet.ChallengeGraphQL.repository.TransactionRepository;
 import graphql.schema.idl.TypeDefinitionRegistry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -39,10 +39,7 @@ public class GraphQLService {
 
     @PostConstruct
     private void loadSchema() throws IOException {
-        //Load Books into the Book Repository
-        // get the schema
         File schemaFile = resource.getFile();
-        // parse schema
         TypeDefinitionRegistry typeRegistry = new SchemaParser().parse(schemaFile);
         RuntimeWiring wiring = buildRuntimeWiring();
         GraphQLSchema schema = new SchemaGenerator().makeExecutableSchema(typeRegistry, wiring);
